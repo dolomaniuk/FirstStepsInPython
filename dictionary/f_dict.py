@@ -22,5 +22,18 @@ pythons = {
     'Jones':'Terry',
     'Palin':'Michael',
 }
+
 pythons['Gilliam'] = 'Terry' # add new item to dict
 
+others = {
+    'Marx':'Grucho',
+    'Howard':'Moe'
+}
+
+pythons.update(others)
+print(pythons)
+del pythons['Howard']
+
+# pythons.clear()
+key = 'Marx1'
+print(pythons.get(key, "%s isn't in pythons" % key)) # find key in a dict
